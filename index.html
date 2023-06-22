@@ -12,40 +12,58 @@
 
 <body>
   <main>
+    <div id="login-container" class="login-container">
+      <div class="main-container">
+        <section class="image-container-mobile">
+          <img src="./assets/images/illustration-sign-up-mobile.svg" alt="">
+        </section>
+        <section class="content">
+          <h1>Stay updated!</h1>
+          <p class="content-message">Join 60,000+ product managers receiving monthly updates on:</p>
+          <div class="services-container">
+            <ul>
+              <li><img src="./assets/images/icon-list.svg" alt="icon-list">
+                <p>Product discovery and building what matters</p>
+              </li>
+              <li><img src="./assets/images/icon-list.svg" alt="icon-list">
+                <p>Measuring to ensure updates are a success</p>
+              </li>
+              <li><img src="./assets/images/icon-list.svg" alt="icon-list">
+              <p>And much more!</p>
+              </li>
+            </ul>
+          </div>
+          <!--<div class="subscribe-container">-->
+            <form>
+              <div class="label-container">
+                <label for="email">Email address</label><br>
+                <p id="error-message" class="error-message">Valid email required</p>
+              </div>
+              <input id="email" class="email" type="email" placeholder="email@company.com"><br>
+              <button id="login-button" type="text">Subscribe to monthly newsletter</button>
+            </form>
+          <!--</div>-->
+        </section>
+        <section class="image-container-desktop">
+          <img class="image-desktop" src="./assets/images/illustration-sign-up-desktop.svg" alt="">
+        </section>
+      </div>
+    </div>
 
-    <div class="main-container">
-      <section class="image-container-mobile">
-        <img src="./assets/images/illustration-sign-up-mobile.svg" alt="">
-      </section>
-      <section class="content">
-        <h1>Stay updated!</h1>
-        <p class="content-message">Join 60,000+ product managers receiving monthly updates on:</p>
-        <div class="services-container">
-          <ul>
-            <li><img src="./assets/images/icon-list.svg" alt="icon-list">
-              <p>Product discovery and building what matters</p>
-            </li>
-            <li><img src="./assets/images/icon-list.svg" alt="icon-list">
-              <p>Measuring to ensure updates are a success</p>
-            </li>
-            <li><img src="./assets/images/icon-list.svg" alt="icon-list">
-            <p>And much more!</p>
-            </li>
-          </ul>
+    <!--Succes Container-->
+    <div id="success-container" class="success-container">
+      <section class="success-main-container">
+        <div class="container-success-text">
+          <img src="./assets/images/icon-success.svg" alt="">
+          <h2>Thanks for subscribing!</h2>
+          <p>
+            A confirmation email has been sent to <b>ash@loremcompany.com.</b> Please open it and 
+            click the button inside to confirm your subscription.
+          </p>
         </div>
-        <!--<div class="subscribe-container">-->
-          <form action="sucess-mesage.html" method="get">
-            <div class="label-container">
-              <label for="email">Email address</label><br>
-              <!--<p class="error-message">Valid email required</p>-->
-            </div>
-            <input id="email" class="email" type="email" placeholder="email@company.com"><br>
-            <button type="submit">Subscribe to monthly newsletter</button>
-          </form>
-        <!--</div>-->
-      </section>
-      <section class="image-container-desktop">
-        <img class="image-desktop" src="./assets/images/illustration-sign-up-desktop.svg" alt="">
+        <div class="container-success-button">
+          <button id="success-button" type="submit">Dismmiss message</button>
+        </div>
       </section>
     </div>
 
@@ -56,5 +74,6 @@
     Coded by <a href="#">Your Name Here</a>.
   </div>
   -->
+  <script src="./code.js"></script>
 </body>
 </html>

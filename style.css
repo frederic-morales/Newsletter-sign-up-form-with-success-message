@@ -21,6 +21,9 @@ main{
     justify-content: center;
     font-family: 'Roboto', sans-serif;
 }
+main .login-container{
+    display: block;
+}
 /*MOBILE*/
 @media screen and (max-width: 750px) {
     main .main-container{
@@ -87,6 +90,7 @@ main{
     }
     /*comentado en html*/
     form .error-message{
+        display: none;
         color: var(--Tomato);
     }
     form input{
@@ -95,7 +99,7 @@ main{
         margin-top: 5px;
         margin-bottom: 25px;
         border: 0.5px var(--Grey) solid;
-        font-size: 14px;
+        font-size: 12px;
         color: var(--Grey);
         border-radius: 5px;
         padding-left: 15px;
@@ -115,7 +119,7 @@ main{
         color: var(--White);
         border-radius: 5px;
         font-weight: 700;
-        font-size: 14px;
+        font-size: 12px;
         outline: none;
     }
     form button:hover, form button:focus{
@@ -186,11 +190,12 @@ main{
         font-weight: 700;
     }
     form .error-message{
+        display: none;
         color: var(--Tomato);
     }
     form input{
         width: 100%;
-        height: 45px;
+        height: 50px;
         margin-top: 5px;
         margin-bottom: 20px;
         border: 0.5px var(--Grey) solid;
@@ -206,7 +211,7 @@ main{
     }
     form button {
         width: 100%;
-        height: 45px;
+        height: 50px;
         border: none;
         text-decoration: none;
         background-color: var(--Dark-Slate-Grey);
@@ -238,4 +243,103 @@ main{
     .main-container .image-container-mobile{
         display: none;
     }
+}
+
+/*SUCESS CONTAINER STYLE*/
+main .success-container{
+    display: none;
+}
+main .success-container .success-main-container{
+    max-width: 375px;
+    height: 100vh;
+    padding: 25px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+.success-main-container .container-success-text{
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+}
+.success-main-container img{
+    width: 50px;
+    padding-top: 80px;
+    padding-bottom: 30px;
+}
+.success-main-container h2{
+    font-size: 40px;
+    color: var(--Dark-Slate-Grey);
+    line-height: 1;
+    padding-bottom: 30px;
+}
+.success-main-container p{
+    font-size: 16px;
+    line-height: 1.3;
+    color: var(--Dark-Slate-Grey);
+}
+.container-success-button{
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+.success-main-container button{
+    width: 100%;
+    height: 50px;
+    margin-bottom: 30px;
+    border: none;
+    text-decoration: none;
+    background-color: var(--Dark-Slate-Grey);
+    color: var(--White);
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 12px;
+    outline: none;
+}
+.success-main-container button:hover, form button:focus{
+    cursor: pointer;
+    background-image: radial-gradient(circle at 120.71% 50%, #deba54 0, #e4b04c 10%, #e9a446 20%, #ed9841 30%, #f0893e 40%, #f2793c 50%, #f3683d 60%, #f35542 70%, #f34249 80%, #f22b52 90%, #f0075c 100%);
+    box-shadow: 0px 21px 49px -8px rgba(255,105,71,0.56);
+    -webkit-box-shadow: 0px 21px 49px -8px rgba(255,105,71,0.56);
+    -moz-box-shadow: 0px 21px 49px -8px rgba(255,105,71,0.56);
+    outline: none;
+    border: none;
+}
+@media screen and (min-width: 750px){
+    main .success-container .success-main-container{
+        max-width: none;
+        width: 425px;
+        height: 425px;
+        border-radius: 6%;
+        padding: 40px 50px 40px 50px;
+    }
+    .success-main-container .container-success-text{
+        height: auto;
+    }
+    .success-main-container img{
+        padding: 0 0 30px 0;
+    }
+    .success-main-container h2{
+        font-size: 45px;
+        padding: 0 0 20px 0;
+    }
+    .success-main-container p{
+        font-size: 14px;
+    }
+    .success-main-container .container-success-button button{
+        height: 50px;
+        margin-bottom: 10px;
+    }
+}
+
+.change-input{
+    background-color: hsl(4, 100%, 95%);
+    border: solid 1px hsl(4, 100%, 67%);
+}
+.change-text::placeholder{
+    color: hsl(4, 100%, 67%);
+}
+.change-hover:hover{
+    border: solid 1px hsl(4, 100%, 67%);
 }
