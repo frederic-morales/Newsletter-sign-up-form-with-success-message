@@ -333,13 +333,9 @@ main .success-container .success-main-container{
     }
 }
 
-.change-input{
-    background-color: hsl(4, 100%, 95%);
-    border: solid 1px hsl(4, 100%, 67%);
-}
-.change-text::placeholder{
+.change-placeholder::placeholder{
     color: hsl(4, 100%, 67%);
 }
-.change-hover:hover{
-    border: solid 1px hsl(4, 100%, 67%);
+.change-input{
+    background-color: hsl(4, 100%, 95%);
 }
